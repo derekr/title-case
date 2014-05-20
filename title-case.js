@@ -1,5 +1,8 @@
-var upper    = require('upper-case');
 var sentence = require('sentence-case');
+
+function upper (str) {
+    return String.prototype.toUpperCase.call(str);
+}
 
 /**
  * Title case a string.
